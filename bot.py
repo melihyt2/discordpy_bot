@@ -146,7 +146,7 @@ async def on_message(message):
             if anahtar in notlar:
                 await message.channel.send(f"{anahtar}: {notlar[anahtar]}")
             else:
-                await message.channel.send("Bu anahtarla bir not bulunamadı.")
+                await message.channel.send("Bu isimde bir not bulunamadı.")
         elif message.content.lower().startswith(f'{prefix}notsil'):
             anahtar = message.content.split(' ')[1]
             if anahtar in notlar:
